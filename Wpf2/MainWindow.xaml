@@ -1,0 +1,34 @@
+﻿<Window x:Class="Wpf2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+	<Grid>
+		<StackPanel Height="37" Margin="50,10,50,0" VerticalAlignment="Top" Orientation="Horizontal">
+			<Label x:Name="personcount" Content="Person Count: 0" Width="151"/>
+			<Label x:Name="index" Content="Index: -1" Width="189"/>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="169" Margin="50,52,0,0" VerticalAlignment="Top" Width="134">
+			<Label x:Name="firstnamelabel" Content="First Name" Height="23" Margin="0,0,0,20"/>
+			<Label x:Name="lastnamelabel" Content="Last Name" Height="23" Margin="0,0,0,20"/>
+			<Label x:Name="agelabel" Content="Age" Height="23" Margin="0,0,0,20"/>
+			<Label x:Name="tlflabel" Content="Telephone Nr" Height="23" Margin="0,0,0,20"/>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="169" Margin="189,52,0,0" VerticalAlignment="Top" Width="134">
+			<TextBox x:Name="firstname" Height="23" TextWrapping="Wrap" Margin="0,0,0,23" TextChanged="firstname_TextChanged" />
+			<TextBox x:Name="lastname" Height="23" TextWrapping="Wrap" Margin="0,0,0,23" TextChanged="lastname_TextChanged"/>
+			<TextBox x:Name="age" Height="23" TextWrapping="Wrap" Margin="0,0,0,23" TextChanged="age_TextChanged"/>
+			<TextBox x:Name="tlf" Height="23" TextWrapping="Wrap" Margin="0,0,0,23" TextChanged="tlf_TextChanged"/>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="169" Margin="333,52,0,0" VerticalAlignment="Top" Width="134">
+			<Button x:Name="_new" Content="New" Height="30" Margin="0,0,0,15" Click="_new_Click"/>
+			<Button x:Name="delete" Content="Delete" Height="30" Margin="0,0,0,15" Click="delete_Click"/>
+			<Button x:Name="up" Content="Previous" Height="30" Margin="0,0,0,15" Click="up_Click"/>
+			<Button x:Name="down" Content="Next" Height="30" Margin="0,0,0,15" Click="down_Click"/>
+		</StackPanel>
+
+	</Grid>
+</Window>
